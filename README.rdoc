@@ -18,18 +18,19 @@ Anyone can easily join the network and download the keywords database.
 
 ==  ROADMAP
 - Captcha for the 1st query;
-- Logging the search keywords used;  
 - Show Keyword visit graphs;
 - Filter by period;
 - Keyword Expansion API;
-- API for keyword sharing;
+- API for keyword collection;
 - Javascript tag for Keyword collecting;
 - OpenKeywords toolbar;
 - Wordpress Plugin;
+- Collect Weekly Adwords CPC keywords;
 
 
 
-== Tech
+
+== Tech (provisory, depending on team discussion)
 
 - Ruby
 - Rails
