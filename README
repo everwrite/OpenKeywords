@@ -1,15 +1,11 @@
-<html>
-<head>
-</head>
-<body>
 Hello World!
 Welcome to OpenKeywords
 
-<h1> OpenKeywords </h1>
+=OpenKeywords=
 OpenKeywords is an open keyword database, built collaboratively with data collected from thousands of anonymous web sites just like yours! 
 Anyone can easily join the network and download the keywords database.
 
-<h2>Features</h2>
+==Features==
 - User Authetication;
 - Daily Keyword Collection from Google Analytics, featuring visits and country;
 - Generates daily datasets for download of "all time, last 30 days, last 7 days, yesterday";
@@ -20,7 +16,7 @@ Anyone can easily join the network and download the keywords database.
   - Yesterday's Visits;
   - Filter by Country;
 
-ROADMAP
+==ROADMAP==
 - Captcha for the 1st query;
 - Logging the search keywords used;  
 - Show Keyword visit graphs;
@@ -33,7 +29,7 @@ ROADMAP
 
 
 
-<h2>Tech</h2>
+==Tech==
 
 - Ruby
 - Rails
@@ -47,5 +43,3 @@ Gems:
 - Mongoid - mongo driver
 - Garb - Google Analytics API Wrapper
 
-</body>
-</html>
