@@ -1,7 +1,7 @@
 Hello World!
 Welcome to OpenKeywords
 
-OpenKeywords
+= OpenKeywords
 OpenKeywords is an open keyword database, built collaboratively with data collected from thousands of anonymous web sites just like yours! 
 Anyone can easily join the network and download the keywords database.
 
@@ -16,7 +16,7 @@ Anyone can easily join the network and download the keywords database.
   - Yesterday's Visits;
   - Filter by Country;
 
-ROADMAP
+==  ROADMAP
 - Captcha for the 1st query;
 - Logging the search keywords used;  
 - Show Keyword visit graphs;
@@ -29,7 +29,7 @@ ROADMAP
 
 
 
-Tech
+== Tech
 
 - Ruby
 - Rails
@@ -43,3 +43,5 @@ Gems:
 - Mongoid - mongo driver
 - Garb - Google Analytics API Wrapper
 
+=== Contact
+team@myeverwrite.com
