@@ -1,3 +1,7 @@
+<html>
+<head>
+</head>
+<body>
 Hello World!
 Welcome to OpenKeywords
 
@@ -43,3 +47,5 @@ Gems:
 - Mongoid - mongo driver
 - Garb - Google Analytics API Wrapper
 
+</body>
+</html>
