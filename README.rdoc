@@ -44,5 +44,7 @@ Gems:
 - Mongoid - mongo driver
 - Garb - Google Analytics API Wrapper
 
-=== Contact
-team@myeverwrite.com
+=== Team Contacts
+herberthamaral@gmail.com 
+diego@myeverwrite.com
+edmar@myeverwrite.com
