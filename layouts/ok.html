@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>EverWrite - Mostrando pra elas</title>
+	<title>OpenKeywords - The world's first open keyword Database</title>
 	<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic' rel='stylesheet' type='text/css' />
@@ -80,7 +80,7 @@
 		<p>
 			OpenKeywords is an open keyword database, built collaboratively with data collected from anonymous web sites just like yours! All you need to help is a Google Analytics account!
 			Wanna help? <br/><br/>
-			    <a href="#" class="pill negative button"><b class="gradient"></b><span>Create Your Account!</span></a>
+			    <a href="#signupModal" rel="modal" class="pill negative button"><b class="gradient"></b><span>Create Your Account!</span></a>
 			
 		</p>
 		</div>
@@ -88,16 +88,16 @@
 	<div class="tip">
 		<div class="txt">	
 		<p>Before OpenKeywords, search data was something really hard (and expensive) to get.
-Now, researchers, marketers and even curious people can download our complete dataset (you must be logged in).<br/><br/>
-<a href="#" class="pill negative button"><b class="gradient"></b><span>Download full dataset!</span></a>
+Now, researchers, marketers and even curious people can download our complete dataset (you must have an account).<br/><br/>
+<a href="#downloadModal" rel="modal" class="pill negative button"><b class="gradient"></b><span>Download full dataset!</span></a>
 		</div>
 	</div>
 	<div class="tip">
 		<div class="txt">	
 		<p>We provide a free service, although our infrastructure costs are very high. Check out our lovely sponsors!</p><br/>
 		
-		<p><a href=""><img src="http://107.20.248.191/wp-content/uploads/EverWrite_logo3.png" style="margin-left:35px;"/></a></p><br/>
-		<p>Want to become a sponsor? <a href="#">Get in touch!</a></p><br/>
+		<p><a href="http://myeverwrite.com"><img src="images/logo.png"/></a></p>
+		<p>Want to become a sponsor? <a href="mailto:contact@openkeywords.org">Get in touch!</a></p><br/>
 		</div>
 	</div>
 </div>
@@ -119,15 +119,13 @@ Now, researchers, marketers and even curious people can download our complete da
 <div id="loginModal" style="display:none;">
 	<div id="login">
 		<h2>Sign In:</h2>
-		<!--p class="msg-error">Invalid username or email!</p--><br/>
+		<br/>
 		<label for="username">Email:</label>
 		<input type="text"/>
 		<label for="password">Password:</label>
 		<input type="password"/>
-		<!--input type="checkbox" value="checked" id="idremember" class="left"/>
-		<label for="idremember">Stay signed in</label-->
 		<a href="" class="right">Lost Password?</a><br/><br/><br/><br/>
-		<!--a href="">Sign Up!</a--><a href="" class="positive big button right">Let me in!</a> 
+		<a href="" class="positive big button right">Let me in!</a> 
 		<div class="clear"></div>
 		<br/>
 	</div>
@@ -142,10 +140,8 @@ Now, researchers, marketers and even curious people can download our complete da
 		<input type="password"/>
 		<label for="password">Repeat Password:</label>
 		<input type="password"/>
-		<!--input type="checkbox" value="checked" id="idremember" class="left"/>
-		<label for="idremember">Stay signed in</label-->
 		<a href="" class="right">Lost Password?</a><br/><br/><br/><br/>
-		<!--a href="">Sign Up!</a--><a href="" class="positive big button right">Sign Up!</a> 
+		<a href="" class="positive big button right">Sign Up!</a> 
 		<div class="clear"></div>
 		<br/>
 	</div>
@@ -162,9 +158,7 @@ Now, researchers, marketers and even curious people can download our complete da
 		<input type="password"/>
 		<label for="password">Old Password:</label>
 		<input type="password"/>
-		<!--input type="checkbox" value="checked" id="idremember" class="left"/>
-		<label for="idremember">Stay signed in</label-->
-		<!--a href="">Sign Up!</a--><a href="" class="positive big button right">Save!</a> 
+		<a href="" class="positive big button right">Save!</a> 
 		<div class="clear"></div>
 		<br/>
 	</div>
@@ -177,6 +171,22 @@ Now, researchers, marketers and even curious people can download our complete da
 		<br/><br/>
 		<h3> Accounts connected</h3>
 		<img src='images/gaIcon.png' width="30px" style="margin-bottom:-10px;margin-top:10px;"/> diego.ttg@gmail.com <a href="#"><img src="images/del.gif" style="margin-bottom:-3px;margin-top:3px;"/></a>
+		<div class="clear"></div>
+		<br/>
+	</div>
+</div>
+<div id="downloadModal" style="display:none;">
+	<div id="login">
+		<h2>Download our Open Dataset:</h2>
+		<p>All the data at OpenKeywords is available for download. For free!</p><br/>
+		<ul>
+			<li class="downli"><a href=""><img src='images/downloadiconsmall.png' style="margin-bottom:-14px"><strong>All Time set</strong> <small>(1TB)</small></a></li>
+			<li class="downli"><a href=""><img src='images/downloadiconsmall.png' style="margin-bottom:-14px"><strong>30 day set</strong> <small>(30GB)</small></a></li>
+			<li class="downli"><a href=""><img src='images/downloadiconsmall.png' style="margin-bottom:-14px"><strong>7 day set</strong> <small>(1GB)</small></a></li>
+		</ul><br/>
+		<h3>Try our AWS Public Dataset</h3>
+		<p>We just applied to offer an AWS public dataset with all the data from OpenKeywords.org</p>
+		<p>We'll let you know when it's available!</a>
 		<div class="clear"></div>
 		<br/>
 	</div>
