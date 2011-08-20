@@ -64,7 +64,7 @@ Devise.setup do |config|
   config.stretches = 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "82f640355b2f2665e9ee5259ae9428c28536cecbaf08a5fd9eebf2ab50fc9f4ebc2049569f871e32a8b7c08696f005d0846476fa88c3fcf6b69ea75ddc9ff364"
+  # config.pepper = "a7856481ed5b8c8006ea3050c3ec943e0cbd9946d5c33cd956c305a271ae6bb7165b4c0512bf0498c87446b1313029cd4cbdda9cb5c70a87c66186ce34f7dbfc"
 
   # ==> Configuration for :confirmable
   # The time you want to give your user to confirm his account. During this time
@@ -185,7 +185,7 @@ Devise.setup do |config|
   # config.navigational_formats = [:"*/*", "*/*", :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = :delete
+  config.sign_out_via = :get
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
