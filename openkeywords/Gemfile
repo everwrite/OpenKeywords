@@ -12,6 +12,8 @@ gem 'resque'
 gem 'SystemTimer'
 gem 'json'
 gem 'garb'
+gem 'oauth'
+gem 'devise'
 # Use unicorn as the web server
 # gem 'unicorn'
 
