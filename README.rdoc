@@ -8,7 +8,7 @@ Anyone can easily join the network and download the keywords database.
 == Features
 - User Authetication;
 - Daily Keyword Collection from Google Analytics, featuring visits and country;
-- Generates daily datasets for download of "all time, last 30 days, last 7 days, yesterday";
+- Generate daily datasets for download of "all time, last 30 days, last 7 days";
 - Users can enter a keyword and see a table containing:
   - Similar Keywords;
   - Monthly Visits;
@@ -45,6 +45,6 @@ Gems:
 - Garb - Google Analytics API Wrapper
 
 === Team Contacts
-herberthamaral@gmail.com 
-diego@myeverwrite.com
-edmar@myeverwrite.com
+herb@openkeywords.org 
+diego@openkeywords.org
+edmar@openkeywords.org
