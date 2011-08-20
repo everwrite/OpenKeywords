@@ -42,7 +42,6 @@ body { font-family:'Droid Sans', sans-serif;background:url("../images/featured_b
 	a { color: #D84743; }
 
 
-
 #header{background:black;margin-top:-20px;}
 .container { width: 960px; margin:auto; }
 #header .container{height: 30px;}
@@ -188,12 +187,7 @@ body { font-family:'Droid Sans', sans-serif;background:url("../images/featured_b
 	a.button span.icon.user, button span.icon.user { background-position: 0 -854px }
 	a.button:hover span.icon.user, button:hover span.icon.user { background-position: 0 -869px }
 
-	/*PAGINATION*/
-		.pagination a,.previous_page, .next_page, .pagination em {display: inline-block; padding: 6px 5px 5px 5px; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 12px; color: #3C3C3D; text-shadow: 1px 1px 0 #FFFFFF; background: #ECECEC url('..css3buttons_backgrounds.png') 0 0 no-repeat; white-space: nowrap; overflow: visible; cursor: pointer; text-decoration: none; border: 1px solid #CACACA; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; outline: none; position: relative; zoom: 1; line-height: 1.11; *display: inline; *vertical-align: middle; }		
-		.pagination em{background:#fff;cursor:default;}
-		.pagination a:hover{ color: #FFFFFF; border-color: #388AD4; text-decoration: none; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); background-position: 0 -40px; background-color: #2D7DC5; }
-		.pagination .disabled{color:#ccc;cursor:default;}	
-		.pagination{margin-left:180px;}
+
 			
 	/*login*/
 		#login {padding: 25px;width: 300px;font-size:12px;color:black;}
@@ -240,6 +234,14 @@ body { font-family:'Droid Sans', sans-serif;background:url("../images/featured_b
 	.f8{background:#f8f8f8;}
 	.left { float: left;}
 	.right {float:right;}
-
+	.min-400 {min-height:400px;}
 .downli {margin-bottom:20px;}		
 #downloadModal a{display:block;}
+
+
+/*PAGINATION*/
+	.pagination a,.previous_page, .next_page, .pagination em {display: inline-block; padding: 6px 5px 5px 5px; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 12px; color: #3C3C3D; text-shadow: 1px 1px 0 #FFFFFF; background: #ECECEC url('..css3buttons_backgrounds.png') 0 0 no-repeat; white-space: nowrap; overflow: visible; cursor: pointer; text-decoration: none; border: 1px solid #CACACA; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; outline: none; position: relative; zoom: 1; line-height: 1.11; *display: inline; *vertical-align: middle; }		
+	.pagination em{background:#fff;cursor:default;}
+	.pagination a:hover{ color: #FFFFFF; border-color: #388AD4; text-decoration: none; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); background-position: 0 -40px; background-color: #2D7DC5; }
+	.pagination .disabled{color:#ccc;cursor:default;}	
+	.pagination{margin-left:180px;}
