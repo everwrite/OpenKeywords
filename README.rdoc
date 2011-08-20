@@ -45,6 +45,8 @@ Gems:
 - Garb - Google Analytics API Wrapper
 
 === Team Contacts
-herb@openkeywords.org 
+herb@openkeywords.org
+ 
 diego@openkeywords.org
+
 edmar@openkeywords.org
