@@ -1,4 +1,8 @@
 Openkeywords::Application.routes.draw do
+  get "access_token/new"
+
+  get "access_token/create"
+
   get "home/index"
 
   devise_for :users
