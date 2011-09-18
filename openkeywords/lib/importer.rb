@@ -30,7 +30,6 @@ class Importer
   end
 
   def get_profile_keywords(profile,start_date = 1.day.ago.midnight)
-	  begin
       results = KeywordReport.results profile, :start_date => start_date, :limit => 1000
 	    pages = results.total_results / 1000 + 1
 	    for page in 1..pages do
@@ -40,9 +39,6 @@ class Importer
 	      end
 	      results = KeywordReport.results profile, :start_date => start_date, :offset => page*1000, :limit => 1000
 	    end
-	  rescue
-		  puts "passou "
-    end
   end
 
   def save_result(result)

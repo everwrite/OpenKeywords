@@ -4,12 +4,12 @@ gem 'rails', '3.0.9'
 gem 'oauth'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem 'resque', '1.16.1'
 gem 'resque-scheduler'
 gem 'sqlite3'
 gem 'mongoid'
 gem 'bson_ext'
-gem 'resque'
+
 gem 'SystemTimer'
 gem 'json'
 gem 'garb'

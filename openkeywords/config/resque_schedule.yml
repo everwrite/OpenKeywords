@@ -1,0 +1,8 @@
+update_keywords:
+  cron: "0 0 * * *"
+  # you can use rufus-scheduler "every" syntax in place of cron if you prefer
+  # every: 1hr
+  class: DailySyncJob
+  queue: high
+  args: 
+  description: "This job queues "
