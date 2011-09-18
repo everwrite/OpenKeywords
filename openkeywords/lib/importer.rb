@@ -42,22 +42,22 @@ class Importer
   end
 
   def save_result(result)
-    KeywordDay.collection.update({:t => result.keyword,:ca => 1.day.ago.utc.midnight }, 
+    KeywordDay.collection.update({:t => result.keyword,:ca => 1.day.ago.utc.midnight, :c =>result.country }, 
       {'$inc' => {'v' => result.visits.to_i }},
       {:upsert =>  true})
     
-    KeywordWeek.collection.update({:t => result.keyword,:ca => Time.now.utc.beginning_of_week }, 
+    KeywordWeek.collection.update({:t => result.keyword,:ca => Time.now.utc.beginning_of_week, :c =>result.country }, 
       {'$inc' => {'v' => result.visits.to_i }},
       {:upsert =>  true})
     
-    KeywordMonth.collection.update({:t => result.keyword,:ca => Time.now.utc.beginning_of_month },
+    KeywordMonth.collection.update({:t => result.keyword,:ca => Time.now.utc.beginning_of_month, :c =>result.country },
     {'$inc' => {'v' => result.visits }}, {:upsert =>  true})
     
-    KeywordYear.collection.update({:t => result.keyword,:ca => Time.now.utc.beginning_of_year}, 
+    KeywordYear.collection.update({:t => result.keyword,:ca => Time.now.utc.beginning_of_year, :c =>result.country}, 
       {'$inc' => {'v' => result.visits.to_i }},
       {:upsert =>  true})
     
-    KeywordAll.collection.update({:t => result.keyword}, 
+    KeywordAll.collection.update({:t => result.keyword, :c =>result.country}, 
       {'$inc' => {'v' => result.visits.to_i }},
       {:upsert =>  true})
   end

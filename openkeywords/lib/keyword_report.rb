@@ -2,6 +2,6 @@ class KeywordReport
   extend Garb::Model
 
   metrics :visits
-  dimensions :keyword
+  dimensions :keyword,:country
 
 end
