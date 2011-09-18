@@ -2,18 +2,25 @@ require 'keyword_report'
 
 class Importer
 
-  def initialize()
-    auth
+  def initialize token,secret
+    auth token,secret
     get_profiles
     mega_updater_pro
   end
 
-  def auth
-     Garb::Session.login "your_google_account", "your_pwd"
+  def auth token,secret
+	   consumer = OAuth::Consumer.new('myeverwrite.com', 'uHvDjXZpKGs4FmK8QOSvX9zF', {
+		  :site => 'https://www.google.com',
+		  :request_token_path => '/accounts/OAuthGetRequestToken',
+		  :access_token_path => '/accounts/OAuthGetAccessToken',
+		  :authorize_path => '/accounts/OAuthAuthorizeToken'
+		 })	   
+     access_token = OAuth::AccessToken.new(consumer, token, secret)	   
+     Garb::Session.access_token = access_token
   end
 
   def get_profiles
-    @profiles = Garb::Management::Profile.all()
+    @profiles = Garb::Profile.all()
   end
 
   def mega_updater_pro
@@ -23,17 +30,19 @@ class Importer
   end
 
   def get_profile_keywords(profile,start_date = 1.day.ago.midnight)
-    results = KeywordReport.results profile, :start_date => start_date, :limit => 1000
-    pages = results.total_results / 1000 + 1
-
-    for page in 1..pages do
-      puts page
-      results.each do | result |
-        save_result result
-      end
-      results = KeywordReport.results profile, :start_date => start_date, :offset => page*1000, :limit => 1000
+	  begin
+      results = KeywordReport.results profile, :start_date => start_date, :limit => 1000
+	    pages = results.total_results / 1000 + 1
+	    for page in 1..pages do
+	      puts page
+	      results.each do | result |
+	        save_result result
+	      end
+	      results = KeywordReport.results profile, :start_date => start_date, :offset => page*1000, :limit => 1000
+	    end
+	  rescue
+		  puts "passou "
     end
-
   end
 
   def save_result(result)
