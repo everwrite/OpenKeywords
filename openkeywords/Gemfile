@@ -9,7 +9,8 @@ gem 'resque-scheduler'
 gem 'sqlite3'
 gem 'mongoid'
 gem 'bson_ext'
-
+#gem 'will_paginate', '~> 3.0'
+gem "kaminari", "0.12.4"
 gem 'SystemTimer'
 gem 'json'
 gem 'garb'
