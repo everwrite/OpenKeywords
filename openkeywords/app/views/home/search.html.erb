@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>OpenKeywords - The world's first open keyword Database</title>
+		
+	<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css' />
+
+	<!--jQuery-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script> 
+
+	<!--jQuery Facebox-->
+	<script src="plugins/jquery-facebox/facebox.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="plugins/jquery-facebox/facebox.css" type="text/css" />
+
+	<script >
+		$(document).ready(function()
+		{
+			// jQuery Facebox Modal
+			$('a[rel*=modal]').facebox({ opacity: 0.5 }); 
+		});
+	</script>
+	<style>
+		.centerfield{width:960px;margin:auto;}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<ul>
+			<li><a href="#" rel="modal">Sign Out</a></li>
+			<li><a href="#userdataModal" rel="modal">My Info</a></li>
+			<li><a href="#analyticsModal" rel="modal">Analytics</a></li>
+			<li><a href="#signupModal" rel="modal">Sign Up</a></li>
+			<li><a href="#loginModal" rel="modal">Sign In</a></li>
+			
+			</ul>
+		</div>
+	
+		<div class="cotton-area white-border-top">    
+			<div class="cotton-inner clearfix">	
+				<div class="container">	
+				<a class="left" href="/"><img class="adjustlogo" src="/images/oklogo.png"/></a>
+					<div class="right">
+						<form id="kwsearch" class='margin-right'>
+						<fieldset>
+							<div class="search">
+								<input type="text" name="q" value="<%= params[:q] %>" id="q">
+								<input type="image" src="/images/search.png" value="Search" class="search">
+							</div>
+							<p>Enter the keyword that you'd like to expand or get volume info! »</p>
+						</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>  
+		<div class="cotton-top">
+		</div>  
+	</div>	
+<!--CONTENT-->
+<div class="f8">
+<div class="container min-400">
+	<br/>
+	<h1 class="left">Similar Keywords to 'como fazer'</h1>
+	<div class="right">
+		Country: <select><option>All</option><option>Brazil</option>
+		</select>
+	</div>
+	<div class="clear"></div>
+	
+	<% if @keywords.count == 0  %>
+	
+	<h3>No results found. </h3>
+	<p>Have you ever considered connecting to your <a href="">Google Analytics account</a>  to help us to avoid this happening again later?</p>
+	
+	<% end %>
+	
+	<table class="common-table zebra-striped">
+		<tr>
+			<th><a href="">Keywords</a></th>
+			<th><a href="">Visits (Yesterday) <img src="images/sort-desc.png" class="sortIcon" height="8" width="9" alt="arrow"/></a></th>
+		</tr>
+		<% @keywords.each do  |keyword|  %>
+		<tr>
+			<td><a href="#">  <%= keyword.term  %>     </a></td>
+			<td><span><%= keyword.visits  %></span></td>
+		</tr>
+		<% end %>
+	</table>
+	<!--PAGINATION-->	
+	<div class="pagination">
+		
+		<%= paginate @keywords %>
+			
+		</div>	<br/> 
+	<!--END PAGINATION-->
+</div>
+
+</div> 
+	      
+
+<div  class="cotton-area clear">   
+	<div class="cotton-top clear">&nbsp;
+	</div>            	
+		<div class="footer">
+			<a href="http://blog.openkeywords.org">Blog</a> | 
+			<a href="/about/">About</a> |
+			<a href="mailto:contact@openkeywords.org">Contact</a> |
+			<a href="mailto:contact@openkeywords.org">Sponsor Us!</a> 
+		</div>
+</div>
+
+</body></html>
