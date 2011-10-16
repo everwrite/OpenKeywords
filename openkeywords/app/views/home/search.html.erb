@@ -30,11 +30,13 @@
 	<div id="header">
 		<div class="container">
 			<ul>
-			<li><a href="#" rel="modal">Sign Out</a></li>
-			<li><a href="#userdataModal" rel="modal">My Info</a></li>
-			<li><a href="#analyticsModal" rel="modal">Analytics</a></li>
-			<li><a href="#signupModal" rel="modal">Sign Up</a></li>
-			<li><a href="#loginModal" rel="modal">Sign In</a></li>
+					 <% if user_signed_in? %>
+					   	<li><%= link_to 'Sign out', destroy_user_session_path %></li>
+						<li><a href="/users/edit"> My Info </a></li>
+						<li style="margin-top:2px;"> Signed in as <%= current_user.email %></li>
+					  <% else %>
+					    <li><%= link_to 'Sign Up', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %></li>
+					  <% end %>
 			
 			</ul>
 		</div>
@@ -64,7 +66,7 @@
 <div class="f8">
 <div class="container min-400">
 	<br/>
-	<h1 class="left">Similar Keywords to 'como fazer'</h1>
+	<h1 class="left">Similar Keywords to '<%= params[:q] %>'</h1>
 	<div class="right">
 		Country: <select><option>All</option><option>Brazil</option>
 		</select>
@@ -75,26 +77,25 @@
 	
 	<h3>No results found. </h3>
 	<p>Have you ever considered connecting to your <a href="">Google Analytics account</a>  to help us to avoid this happening again later?</p>
-	
+	<% else %>
+		<table class="common-table zebra-striped">
+			<tr>
+				<th><a href="">Keywords</a></th>
+				<th><a href="">Visits (Yesterday) <img src="images/sort-desc.png" class="sortIcon" height="8" width="9" alt="arrow"/></a></th>
+			</tr>
+			<% @keywords.each do  |keyword|  %>
+			<tr>
+				<td><a href="#">  <%= keyword.term  %>     </a></td>
+				<td><span><%= keyword.visits  %></span></td>
+			</tr>
+			<% end %>
+		</table>
 	<% end %>
 	
-	<table class="common-table zebra-striped">
-		<tr>
-			<th><a href="">Keywords</a></th>
-			<th><a href="">Visits (Yesterday) <img src="images/sort-desc.png" class="sortIcon" height="8" width="9" alt="arrow"/></a></th>
-		</tr>
-		<% @keywords.each do  |keyword|  %>
-		<tr>
-			<td><a href="#">  <%= keyword.term  %>     </a></td>
-			<td><span><%= keyword.visits  %></span></td>
-		</tr>
-		<% end %>
-	</table>
+
 	<!--PAGINATION-->	
 	<div class="pagination">
-		
 		<%= paginate @keywords %>
-			
 		</div>	<br/> 
 	<!--END PAGINATION-->
 </div>

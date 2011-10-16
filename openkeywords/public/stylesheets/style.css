@@ -88,14 +88,6 @@ body { font-family:'Droid Sans', sans-serif;background:url("../images/featured_b
 	.footer a, .footer { font-size: 12px; color: #fff; text-decoration: none; opacity: 0.9; margin-left: 5px;bottom:0px;  }
 	.footer { width: 300px; margin: auto; }
 	
-	/*messages*/
-	.msg-error, .msg-success, .msg-attention, .msg-info, #flash_error, #flash_alert, #flash_notice {padding-left: 17px;padding:8px;position: relative;}
-		.remove-btn {position: absolute;top: 0;right: 17px;padding-right: 20px;background: url('../images/remove-btn.png') no-repeat center right;color: #333 !important;}
-		.remove-btn:hover {color: #666 !important;}
-	.msg-error, #flash_alert {background: #f0cec4;color: #a24057;border: 1px solid #a24057;}
-	.msg-success, #flash_notice {background: #eaf8d5;color: #829b36;border: 1px solid #829b36;}
-	.msg-attention, {background: #fffbcc;color: #c0a443;border: 1px solid #c0a443;}
-	.msg-info {background: #d2eef1;color: #369fb4;border: 1px solid #369fb4;}
 	/*CSS3BUTTONS*/
 
 	a.button, button { display: inline-block; padding: 6px 5px 5px 5px; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 12px; color: #3C3C3D; text-shadow: 1px 1px 0 #FFFFFF; background: #ECECEC url('..../images/css3buttons_backgrounds.png') 0 0 no-repeat; white-space: nowrap; overflow: visible; cursor: pointer; text-decoration: none; border: 1px solid #CACACA; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; outline: none; position: relative; zoom: 1; line-height: 1.11; *display: inline; *vertical-align: middle; }
@@ -188,19 +180,6 @@ body { font-family:'Droid Sans', sans-serif;background:url("../images/featured_b
 	a.button:hover span.icon.user, button:hover span.icon.user { background-position: 0 -869px }
 
 
-			
-	/*login*/
-		#login {padding: 25px;width: 300px;font-size:12px;color:black;}
-			#login h2 {padding-bottom: 5px;margin-bottom: 20px;font-size: 18px;font-weight: normal;border-bottom: 1px solid #ddd;}
-			#login label {color: black;font-weight: bold;}
-			#login input[type=text],#login input[type=password] {height:26px; margin: 5px 0 10px;width: 291px;background: #f8f8f8;border: 1px solid #aaa;}
-			#login p {margin: 10px 0 5px;}
-			#login input[type=submit] {float: right;}
-			
-
-
-	
-
 /*TWITTER TABLE STYLES*/
 	table{width:100%;margin-bottom:18px;padding:0;text-align:left;border-collapse:separate;font-size:13px;}table th,table td{padding:10px 10px 9px;line-height:13.5px;vertical-align:middle;border-bottom:1px solid #ddd;}
 	table th{padding-top:9px;font-weight:bold;border-bottom-width:2px;}
@@ -245,3 +224,5 @@ body { font-family:'Droid Sans', sans-serif;background:url("../images/featured_b
 	.pagination a:hover{ color: #FFFFFF; border-color: #388AD4; text-decoration: none; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); background-position: 0 -40px; background-color: #2D7DC5; }
 	.pagination .disabled{color:#ccc;cursor:default;}	
 	.pagination{margin-left:180px;}
+	
+.notice{background:#ffff99;text-align:center;padding:2px;font-weight:bold;}
