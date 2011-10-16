@@ -225,4 +225,4 @@ body { font-family:'Droid Sans', sans-serif;background:url("../images/featured_b
 	.pagination .disabled{color:#ccc;cursor:default;}	
 	.pagination{margin-left:180px;}
 	
-.notice{background:#ffff99;text-align:center;padding:2px;font-weight:bold;}
+.notice, .alert{background:#ffff99;text-align:center;padding:2px;font-weight:bold;}
