@@ -1,4 +1,18 @@
-<h2>Sign in Fuck</h2>
+<html>
+<head>
+    <link href="/stylesheets/login.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>	
+	<header class="centerlogo">
+		<h1 class="logo"><a href="/"><img src="/images/oklogo.png"/></a></h1>
+	</header>
+    <section class="container_12 clearfix">
+      <div class="grid_12">
+        <div class="grid_4 prefix_4 alpha">
+          <div class="box mb">
+<h2>Sign in</h2>
 
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
   <p><%= f.label :email %><br />
@@ -7,11 +21,15 @@
   <p><%= f.label :password %><br />
   <%= f.password_field :password %></p>
 
-  <% if devise_mapping.rememberable? -%>
-    <p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>
-  <% end -%>
-
   <p><%= f.submit "Sign in" %></p>
 <% end %>
 
-<%= render :partial => "devise/shared/links" %>
+<%= link_to "Forgot your password?", new_password_path(resource_name) %>
+ </section>
+    <footer class="container_12 clearfix">
+      <section class="grid_12">
+        2011 <a href="">OpenKeywords.org</a> / <a href="" >Privacy</a> / <a href="">ToS</a> / <a href="">Contact</a>
+      </section>
+    </footer>
+</body>
+</html>

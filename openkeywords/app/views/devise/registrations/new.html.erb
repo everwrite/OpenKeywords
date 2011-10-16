@@ -1,14 +1,18 @@
 <html>
 <head>
     <link href="/stylesheets/login.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 
   <body>	
+	<header class="centerlogo">
+		<h1 class="logo"><a href="/"><img src="/images/oklogo.png"/></a></h1>
+	</header>
     <section class="container_12 clearfix">
       <div class="grid_12">
         <div class="grid_4 prefix_4 alpha">
           <div class="box mb">
-<h2>Sign up</h2>
+<h2>Sign up - Step 1 of 2</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -25,7 +29,6 @@
   <p><%= f.submit "Sign up" %></p>
 <% end %>
 
-<%= render :partial => "devise/shared/links" %>
  </section>
     <footer class="container_12 clearfix">
       <section class="grid_12">

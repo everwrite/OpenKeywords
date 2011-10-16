@@ -224,5 +224,4 @@ body { font-family:'Droid Sans', sans-serif;background:url("../images/featured_b
 	.pagination a:hover{ color: #FFFFFF; border-color: #388AD4; text-decoration: none; text-shadow: -1px -1px 0 rgba(0,0,0,0.3); background-position: 0 -40px; background-color: #2D7DC5; }
 	.pagination .disabled{color:#ccc;cursor:default;}	
 	.pagination{margin-left:180px;}
-	
 .notice, .alert{background:#ffff99;text-align:center;padding:2px;font-weight:bold;}

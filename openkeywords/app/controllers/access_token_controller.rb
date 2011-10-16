@@ -24,7 +24,7 @@ class AccessTokenController < ApplicationController
     request_token = OAuth::RequestToken.new(consumer, params[:oauth_token], session[:oauth_secret])
     @access_token = request_token.get_access_token(:oauth_verifier => params[:oauth_verifier] )
     user.access_token.create( :token => @access_token.token, :secret => @access_token.secret)	
-		flash[:notice] = "Your account data is being processed. Get a mug of tea." 
+		flash[:notice] = "Your account data was successfuly connected! Welcome aboard." 
 		redirect_to "/"
   end
 
