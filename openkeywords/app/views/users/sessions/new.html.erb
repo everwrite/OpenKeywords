@@ -1,19 +1,14 @@
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
+<html>
+<head>
     <link href="/stylesheets/login.css" media="screen" rel="stylesheet" type="text/css" />
-
-
-  </head>
+</head>
 
   <body>	
     <section class="container_12 clearfix">
       <div class="grid_12">
         <div class="grid_4 prefix_4 alpha">
           <div class="box mb">
-            <h2>Fazer login</h2>
+            <h2>Login</h2>
             <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 			  <p><%= f.label :email %><br />
 			  <%= f.email_field :email %></p>
@@ -37,4 +32,5 @@
         2011 <a href="">OpenKeywords.org</a> / <a href="" >Privacy</a> / <a href="">ToS</a> / <a href="">Contact</a>
       </section>
     </footer>
-
+</body>
+</html>

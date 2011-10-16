@@ -1,3 +1,13 @@
+<html>
+<head>
+    <link href="/stylesheets/login.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>	
+    <section class="container_12 clearfix">
+      <div class="grid_12">
+        <div class="grid_4 prefix_4 alpha">
+          <div class="box mb">
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
@@ -23,3 +33,11 @@
 <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
 
 <%= link_to "Back", :back %>
+ </section>
+    <footer class="container_12 clearfix">
+      <section class="grid_12">
+        2011 <a href="">OpenKeywords.org</a> / <a href="" >Privacy</a> / <a href="">ToS</a> / <a href="">Contact</a>
+      </section>
+    </footer>
+</body>
+</html>

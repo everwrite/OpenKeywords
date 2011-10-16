@@ -1,3 +1,13 @@
+<html>
+<head>
+    <link href="/stylesheets/login.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>	
+    <section class="container_12 clearfix">
+      <div class="grid_12">
+        <div class="grid_4 prefix_4 alpha">
+          <div class="box mb">
 <h2>Sign up</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
@@ -16,3 +26,11 @@
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>
+ </section>
+    <footer class="container_12 clearfix">
+      <section class="grid_12">
+        2011 <a href="">OpenKeywords.org</a> / <a href="" >Privacy</a> / <a href="">ToS</a> / <a href="">Contact</a>
+      </section>
+    </footer>
+</body>
+</html>
