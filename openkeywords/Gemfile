@@ -17,6 +17,7 @@ gem 'garb'
 gem 'oauth'
 gem 'devise'
 gem 'factory_girl_rails'
+gem 'jquery-rails'
 # Use unicorn as the web server
 # gem 'unicorn'
 
