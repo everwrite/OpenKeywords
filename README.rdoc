@@ -2,11 +2,11 @@ Hello World!
 Welcome to OpenKeywords
 
 = OpenKeywords
-OpenKeywords is an open keyword database, built collaboratively with data collected from thousands of anonymous web sites just like yours! 
-Anyone can easily join the network and download the keywords database.
+OpenKeywords is an open keyword database, built collaboratively with data collected from voluntary anonymous web sites just like yours! 
+Anyone can easily join the network and download the keyword database.
 
 == Features
-- User Authetication;
+- User Authetication (devise+oauth);
 - Daily Keyword Collection from Google Analytics, featuring visits and country;
 - Generate daily datasets for download of "all time, last 30 days, last 7 days";
 - Users can enter a keyword and see a table containing:
@@ -25,12 +25,12 @@ Anyone can easily join the network and download the keywords database.
 - Javascript tag for Keyword collecting;
 - OpenKeywords toolbar;
 - Wordpress Plugin;
-- Collect Weekly Adwords CPC keywords;
+- Collect Adwords CPC;
 
 
 
 
-== Tech (provisory, depending on team discussion)
+== Tech 
 
 - Ruby
 - Rails
@@ -46,7 +46,5 @@ Gems:
 
 === Team Contacts
 herb@openkeywords.org
- 
 diego@openkeywords.org
-
 edmar@openkeywords.org
